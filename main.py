@@ -44,8 +44,14 @@ def merge_pdfs(folder_path, files_order):
 
 def process():
     """Traitement principal déclenché par 'start'"""
-    while True:
+    is_on = True
+    while is_on:
         command = input("👉 Tapez 'start' pour lancer le traitement : ").strip().lower()
+
+        if command == "quit":
+            print("👋 Au revoir !")
+            is_on = False
+            break
 
         if command != "start":
             print("❌ Commande inconnue")
