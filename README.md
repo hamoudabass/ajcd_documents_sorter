@@ -90,22 +90,26 @@ start
 # 🧩 Fonctionnement interne
 1. Le script scanne Documents pour détecter tous les fichiers requis.
 2. Vérifie les conditions :
+ ```bash
  . au moins un AN
  . AD présent
  . AM ou CNI présent
+ ```
 3. Fusion des anciens dossiers déjà présents dans AJCD_ORPHAN_FILES.
 4. Pour chaque fichier AN :
+```bash
     Crée un nouveau dossier numéroté
     Déplace AN
     Copie AD, AM, CNI selon disponibilité
     Fusionne les fichiers dans dossier_complet.pdf
+ ```
 5. Supprime les fichiers originaux de Documents (mais pas ceux copiés dans les dossiers).
 
 # 💡 Conseils d’utilisation
-    Toujours placer les fichiers dans Documents/ avant de taper start.
-    Vérifier que les fichiers PDF sont correctement nommés (AN, AD, AM, CNI).
-    Les dossiers sont numérotés automatiquement en suivant le dernier existant.
-    Le script peut être relancé plusieurs fois, il fusionnera toujours les dossiers existants et traitera les nouveaux fichiers.
+    - Toujours placer les fichiers dans Documents/ avant de taper start.
+    - Vérifier que les fichiers PDF sont correctement nommés (AN, AD, AM, CNI).
+    - Les dossiers sont numérotés automatiquement en suivant le dernier existant.
+    - Le script peut être relancé plusieurs fois, il fusionnera toujours les dossiers existants et traitera les nouveaux fichiers.
 
 # 🛡️ Gestion des erreurs
     Le script ignore les dossiers qui ne contiennent pas les fichiers obligatoires.
