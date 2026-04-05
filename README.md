@@ -1,28 +1,29 @@
 # AJCD DOCUMENT SORTER
-AJCD Document Sorter – Automatisation du classement et fusion de fichiers PDF pour les dossiers AJCD_ORPHAN_FILES.
+Automatiser le classement et le fusion de fichiers PDF pour les dossiers orphelins pour l'association AJCD !
 
 # 🎯 Objectif
 Ce programme Python permet de :
 
-1.Trier automatiquement les fichiers PDF placés dans le dossier Documents.
-2.Créer des dossiers numérotés dans AJCD_ORPHAN_FILES.
-3.Déplacer et copier les fichiers nécessaires (AN, AD, AM, CNI) selon les règles métier.
-4.Fusionner tous les fichiers PDF de chaque dossier en un seul fichier dossier_complet.pdf.
-5.Maintenir les fichiers originaux tout en nettoyant Documents pour qu’il ne reste aucun fichier PDF en vrac.
-6.Fusionner également les fichiers PDF déjà présents dans les dossiers existants.
+1. Trier automatiquement les fichiers PDF placés dans le dossier Documents.
+2. Créer des dossiers numérotés dans AJCD_ORPHAN_FILES.
+3. Déplacer et copier les fichiers nécessaires (AN, AD, AM, CNI) selon les règles métier.
+4. Fusionner tous les fichiers PDF de chaque dossier en un seul fichier dossier_complet.pdf.
+5. Maintenir les fichiers originaux tout en nettoyant Documents pour qu’il ne reste aucun fichier PDF en vrac.
+6. Fusionner également les fichiers PDF déjà présents dans les dossiers existants.
 
 # 📂Structure attendue
 Avant traitement :
-'''bash
-Documents/
+
+```bash
+  Documents/
 ├── AJCD_ORPHAN_FILES/
 ├── AN ALI.pdf
-├── AN HAMDI.pdf
+├── AN SAADA.pdf
 ├── AD.pdf
 ├── AM.pdf et/ou CNI.pdf
-'''
+```
 Après traitement :
-
+```bash
 Documents/
 └── AJCD_ORPHAN_FILES/
     ├── 432/
@@ -33,6 +34,7 @@ Documents/
     │   └── dossier_complet.pdf
     ├── 433/
     │   └── ...
+```
 
 # 🛠️ Fonctionnalités principales
 ✅ Tri automatique : les fichiers AN multiples sont traités dans l’ordre chronologique (plus ancien → plus récent).
@@ -44,16 +46,17 @@ Documents/
 
 # ⚙️ Prérequis
 Python ≥ 3.7
+
 Bibliothèque Python :
-'''bash
+```bash
 pip install PyPDF2
-'''
+```
 
 Structure minimale :
-
+```bash
 ...Documents/
 ...Documents/AJCD_ORPHAN_FILES/ (sera créé automatiquement si manquant)
-
+```
 # 🚀 Utilisation
 1.Placer vos fichiers PDF dans le dossier Documents/ :
 ...AN (obligatoire, peut être multiple)
@@ -61,24 +64,25 @@ Structure minimale :
 ...AM ou CNI (au moins un)
 
 2.Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
-'''bash
+```bash
 cd Desktop/ajcd_document_sorter
-'''
+```
 Lancer le script :
-'''bash
+```bash
 python script.py
-'''
+```
 Démarrer le traitement :
 
 Le script attend ton signal
-'''bash
+```bash
 start
-'''
+```
 Résultat :
+```bash
 ...Tous les fichiers sont triés dans AJCD_ORPHAN_FILES/
 ...Chaque dossier contient un dossier_complet.pdf fusionné
 ...Documents/ est vide de PDF
-
+```
 
 # 🧩 Fonctionnement interne
 1. Le script scanne Documents pour détecter tous les fichiers requis.
@@ -105,10 +109,6 @@ Résultat :
     Si un PDF est manquant, il attend que tous les fichiers nécessaires soient présents.
     Les fichiers originaux ne sont pas écrasés lors de la fusion.
 
-# 📌 Bonus / future amélioration
-    Interface graphique pour lancer le traitement sans terminal.
-    Logs détaillés pour suivre les traitements.
-    Génération d’une page de garde automatique dans le PDF fusionné avec le nom de l’enfant.
-
 # 🔖 Auteur
-Hamoud Abass – Assajog Passionate about coding !
+
+- [@hamoudabass](https://www.github.com/hamoudabass)
