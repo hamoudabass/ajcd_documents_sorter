@@ -58,34 +58,49 @@ Structure minimale :
 ...Documents/
 ...Documents/AJCD_ORPHAN_FILES/ (sera créé automatiquement si manquant)
 ```
-# 🚀 Utilisation
-1. Placer vos fichiers PDF dans le dossier Documents/ :
+# 🚀 Installation et Utilisation
+
+1. Cloner le projet
+
+```bash
+  git clone https://github.com/hamoudabass/ajcd_documents_sorter.git
+```
+
+2. Placer vos fichiers PDF dans le dossier Documents/ :
 ```bash
 ...AN (obligatoire, peut être multiple)
 ...AD (obligatoire)
 ...AM ou CNI (au moins un)
 ```
 
-2. Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
+3. Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
 ```bash
 cd Desktop/ajcd_document_sorter
 ```
-3. Lancer le script :
+
+4. Lancer le script :
 ```bash
 python script.py
 ```
-**Démarrer le traitement** :
 
-4. Le script attend ton signal
+5. Le script attend ton signal
 ```bash
 start
 ```
-5. Résultat :
+
+6. Résultat :
 ```bash
 ...Tous les fichiers sont triés dans AJCD_ORPHAN_FILES/
 ...Chaque dossier contient un dossier_complet.pdf fusionné
 ...Documents/ est vide de PDF
 ```
+
+
+
+**Après, lancer le programmer** :
+
+
+
 
 # 🧩 Fonctionnement interne
 1. Le script scanne Documents pour détecter tous les fichiers requis.
@@ -118,4 +133,4 @@ start
 
 # 🔖 Auteur
 
-- [@hamoudabass](https://www.github.com/hamoudabass)
+- [Hamoud Abass](https://www.github.com/hamoudabass)
