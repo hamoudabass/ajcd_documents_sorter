@@ -37,13 +37,14 @@ Documents/
 ```
 
 # 🛠️ Fonctionnalités principales
+```bash
 ✅ Tri automatique : les fichiers AN multiples sont traités dans l’ordre chronologique (plus ancien → plus récent).
 ✅ Fusion PDF : création d’un fichier dossier_complet.pdf par dossier, ordre : AN → AD → AM → CNI.
 ✅ Traitement manuel : le programme attend que l’utilisateur tape start pour lancer le tri et la fusion.
 ✅ Fusion dossiers existants : les anciens dossiers sont automatiquement fusionnés lors de chaque démarrage.
 ✅ Nettoyage : aucun fichier PDF ne reste dans Documents après traitement.
 ✅ Conservation des fichiers originaux : les PDF originaux restent dans chaque dossier après fusion.
-
+```
 # ⚙️ Prérequis
 Python ≥ 3.7
 
@@ -59,9 +60,11 @@ Structure minimale :
 ```
 # 🚀 Utilisation
 1.Placer vos fichiers PDF dans le dossier Documents/ :
+```bash
 ...AN (obligatoire, peut être multiple)
 ...AD (obligatoire)
 ...AM ou CNI (au moins un)
+```
 
 2.Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
 ```bash
@@ -71,7 +74,7 @@ Lancer le script :
 ```bash
 python script.py
 ```
-Démarrer le traitement :
+**Démarrer le traitement** :
 
 Le script attend ton signal
 ```bash
