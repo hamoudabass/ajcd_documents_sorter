@@ -59,28 +59,28 @@ Structure minimale :
 ...Documents/AJCD_ORPHAN_FILES/ (sera créé automatiquement si manquant)
 ```
 # 🚀 Utilisation
-1.Placer vos fichiers PDF dans le dossier Documents/ :
+1. Placer vos fichiers PDF dans le dossier Documents/ :
 ```bash
 ...AN (obligatoire, peut être multiple)
 ...AD (obligatoire)
 ...AM ou CNI (au moins un)
 ```
 
-2.Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
+2. Aller dans le dossier du programme (ex: Desktop/ajcd_document_sorter) :
 ```bash
 cd Desktop/ajcd_document_sorter
 ```
-Lancer le script :
+3. Lancer le script :
 ```bash
 python script.py
 ```
 **Démarrer le traitement** :
 
-Le script attend ton signal
+4. Le script attend ton signal
 ```bash
 start
 ```
-Résultat :
+5. Résultat :
 ```bash
 ...Tous les fichiers sont triés dans AJCD_ORPHAN_FILES/
 ...Chaque dossier contient un dossier_complet.pdf fusionné
